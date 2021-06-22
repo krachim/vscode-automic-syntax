@@ -1,0 +1,39 @@
+{
+  "name": "uc4",
+  "displayName": "Automic Automation Script",
+  "description": "Syntax highlight for the Automic Automation scripting Engine",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.57.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "uc4",
+        "aliases": [
+          "Automic Automation Script",
+          "AEScript",
+          "uc4"
+        ],
+        "extensions": [
+          ".uc4"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "uc4",
+        "scopeName": "source.uc4",
+        "path": "./syntaxes/uc4.tmLanguage.json",
+        "embeddedLanguages": {
+          "source.powershell": "powershell",
+          "meta.embedded.block.powershell": "powershell"
+        }
+      }
+    ]
+  }
+}
