@@ -91,8 +91,16 @@
     "variable": {
       "patterns": [
         {
-          "match": "&\\w+#?",
-          "name": "variable.other.uc4"
+          "match": "&\\w+#",
+          "name": "variable.name.uc4"
+        }
+      ]
+    },
+    "variablelang": {
+      "patterns": [
+        {
+          "match": "&$\\w+#",
+          "name": "variable.language.uc4"
         }
       ]
     },
